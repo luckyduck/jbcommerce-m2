@@ -1,16 +1,18 @@
 <?php
 namespace Jbcommerce\Helloworld\Controller\Index;
 
+use Magento\Framework\App\Action\Context;
+
 class Prints extends \Magento\Framework\App\Action\Action
 {
     private $_pageFactory;
 
     public function __construct(
-        \Magento\Framework\App\Action\Context $context,
+        Context $context,
         \Magento\Framework\View\Result\PageFactory $pageFactory
     ) {
         $this->_pageFactory = $pageFactory;
-        return parent::__construct($context);
+        parent::__construct($context);
     }
 
     public function execute()
