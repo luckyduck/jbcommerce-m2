@@ -9,7 +9,7 @@ class UpgradeSchema implements \Magento\Framework\Setup\UpgradeSchemaInterface
 {
     public function upgrade(SchemaSetupInterface $setup, ModuleContextInterface $context)
     {
-        if ($context->getVersion() == '1.0.2') {
+        if (version_compare($context->getVersion(), '1.0.3', '<')) {
             $this->createDbTable($setup, $context);
         }
     }
