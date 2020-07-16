@@ -1,2 +1,8 @@
-Testsd
+<?php
+
+/** @var Jbcommerce\Helloworld\Block\Prints $block */
+$posts = $block->getPosts();
+foreach ($posts as $post) {
+    var_dump($post->getData());
+}
 
