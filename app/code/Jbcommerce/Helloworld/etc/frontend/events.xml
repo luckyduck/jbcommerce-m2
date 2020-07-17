@@ -3,8 +3,4 @@
     <event name="my_module_event_before">
         <observer name="Jbcommerce_Helloworld::observerexamplebefore" instance="Jbcommerce\Helloworld\Observer\Observerbefore" />
     </event>
-
-    <event name="controller_action_catalog_product_save_entity_after">
-        <observer name="Jbcommerce::product_save_after" instance="Jbcommerce\Helloworld\Observer\ProductSave" />
-    </event>
 </config>
