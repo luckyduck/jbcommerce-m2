@@ -8,6 +8,7 @@ class Example extends \Magento\Framework\App\Action\Action
 {
     protected $_pageFactory;
     protected $title;
+    protected $_eventManager;
 
     public function __construct(
         \Magento\Framework\App\Action\Context $context,
@@ -15,6 +16,7 @@ class Example extends \Magento\Framework\App\Action\Action
         EventManager $eventManager
     ) {
         $this->_pageFactory = $pageFactory;
+        $this->_eventManager = $eventManager;
         return parent::__construct($context);
     }
 
