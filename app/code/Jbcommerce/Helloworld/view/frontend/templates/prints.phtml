@@ -1,8 +1,10 @@
+<ul>
 <?php
-
 /** @var Jbcommerce\Helloworld\Block\Prints $block */
 $posts = $block->getPosts();
-foreach ($posts as $post) {
-    var_dump($post->getData());
-}
+?>
+<?php foreach ($posts as $post): ?>
+    <li><?php echo $post->getName(); ?></li>
+<?php endforeach; ?>
+</ul>
 
