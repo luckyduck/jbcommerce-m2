@@ -4,4 +4,7 @@
         <plugin name="Jbcommerce_HelloWorld_Plugin"
                 type="Jbcommerce\Helloworld\Plugin\Controller\ExamplePlugin" sortOrder="10" disabled="false"  />
     </type>
+
+    <preference for="Jbcommerce\Helloworld\Api\ImportSourceInterface"
+                type="Jbcommerce\Helloworld\Model\ImportSource\CsvSource"/>
 </config>
