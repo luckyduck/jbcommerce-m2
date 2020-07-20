@@ -7,4 +7,12 @@
 
     <preference for="Jbcommerce\Helloworld\Api\ImportSourceInterface"
                 type="Jbcommerce\Helloworld\Model\ImportSource\CsvSource"/>
+
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="jbcommerce_helloworld_import" xsi:type="object">Jbcommerce\Helloworld\Console\Import</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
