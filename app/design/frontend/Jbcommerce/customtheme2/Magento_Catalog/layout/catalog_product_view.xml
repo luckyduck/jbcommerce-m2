@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <container name="jbcommerce_delivery" label="Delivery Time Container" htmlTag="div" htmlClass="delivery-container">
+            <block class="Magento\Catalog\Block\Product\View" name="delivery_time" template="Magento_Catalog::product/view/delivery.phtml" />
+        </container>
+
+        <move element="jbcommerce_delivery" destination="product.info.extrahint" before="-" />
+    </body>
+</page>
