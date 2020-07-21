@@ -1,10 +1,27 @@
-<ul>
 <?php
 /** @var Jbcommerce\Helloworld\Block\Prints $block */
-$posts = $block->getPosts();
+//$posts = $block->getPosts();
 ?>
-<?php foreach ($posts as $post): ?>
-    <li><?php echo __('Just a test: %1', $post->getName()); ?></li>
-<?php endforeach; ?>
-</ul>
+<?php //foreach ($posts as $post): ?>
+    <!--<li><?php //echo __('Just a test: %1', $post->getName()); ?></li>-->
+<?php //endforeach; ?>
 
+
+<div data-bind="scope: 'koexample'">
+<!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "koexample": {
+                        "component": "Jbcommerce_Helloworld/js/koexample",
+                        "template": "Jbcommerce_Helloworld/example"
+                    }
+                }
+            }
+        }
+    }
+</script>
