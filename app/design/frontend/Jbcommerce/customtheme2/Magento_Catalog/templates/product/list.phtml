@@ -76,7 +76,9 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
                             <?= $block->getProductDetailsHtml($_product) ?>
                         <?php endif; ?>
 
+                        <?php if($_product->getDeliveryTime()): ?>
                         <div class="delivery-time"><strong><?= __('Delivery time:');?></strong> <?= $_product->getDeliveryTime(); ?></div>
+                        <?php endif; ?>
 
                         <div class="product-item-inner">
                             <div class="product actions product-item-actions"<?= strpos($pos, $viewMode . '-actions') ? $block->escapeHtmlAttr($position) : '' ?>>
