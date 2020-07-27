@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+   <menu>
+       <add id="Jbcommerce_Helloworld" title="Helloworld posts"
+            module="Jbcommerce_Helloworld" sortOrder="20"
+            dependsOnModule="Jbcommerce_Helloworld"
+            resource="Jbcommerce_Helloworld::helloworld"/>
+
+       <add id="Jbcommerce_Helloworld::index" title="Helloworld posts"
+            module="Jbcommerce_Helloworld" action="helloworld/post/index"
+            parent="Jbcommerce_Helloworld" sortOrder="20"
+            dependsOnModule="Jbcommerce_Helloworld"
+            resource="Jbcommerce_Helloworld::helloworld"/>
+   </menu>
+</config>
