@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e1d25263784e019ec84772aa1bae33d",
+    "content-hash": "91deb0d5e97dbb75a8a7cedb5e347104",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -14794,6 +14794,36 @@
                 "phar"
             ],
             "time": "2020-07-07T18:42:57+00:00"
+        },
+        {
+            "name": "splendidinternet/mage2-locale-de-de",
+            "version": "1.58.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/splendidinternet/Magento2_German_LocalePack_de_DE.git",
+                "reference": "488c8b2dcf15e6a3b6d14d4f27fccf494a4851f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/splendidinternet/Magento2_German_LocalePack_de_DE/zipball/488c8b2dcf15e6a3b6d14d4f27fccf494a4851f4",
+                "reference": "488c8b2dcf15e6a3b6d14d4f27fccf494a4851f4",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "^100.0.0 || ^101.0.0 || ^102.0.0"
+            },
+            "type": "magento2-language",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "German (Germany) language",
+            "time": "2020-05-18T15:22:45+00:00"
         },
         {
             "name": "spomky-labs/otphp",
