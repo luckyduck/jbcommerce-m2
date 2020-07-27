@@ -4,6 +4,25 @@ namespace Jbcommerce\Helloworld\Controller\Adminhtml\Post;
 
 use Magento\Backend\App\Action;
 
+/*
+
+route
+app/code/Jbcommerce/HelloWorld/etc/adminhtml/routes.xml
+
+menu
+app/code/Jbcommerce/Helloworld/etc/adminhtml/menu.xml
+
+controller
+app/code/Jbcommerce/Helloworld/Controller/Adminhtml/Post/Index.php
+
+block
+app/code/Jbcommerce/Helloworld/Block/Adminhtml/Post.php
+
+layout
+app/code/Jbcommerce/Helloworld/view/adminhtml/layout/helloworld_post_index.xml
+
+ */
+
 class Index extends \Magento\Backend\App\Action
 {
     protected $resultPageFactory = false;
